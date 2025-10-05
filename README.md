@@ -407,10 +407,10 @@ pyyaml>=6.0
 
 ## 📞 Contact & Support
 
-For questions, suggestions, or contributions, please refer to the project documentation or create an issue in the repository.
+Hasitha Mihiranga (Linkdin)
 
 ---
 
 **Project Status**: ✅ Production Ready  
-**Last Updated**: December 2024  
+**Last Updated**: Octomber 2025  
 **Version**: 1.0.0
