@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/e36cbe3e780e4bcdaf1c3a425f9d5bc6/artifacts
+end_time: 1759673539852
+entry_point_name: ''
+experiment_id: '846139935295218370'
+lifecycle_stage: active
+run_id: e36cbe3e780e4bcdaf1c3a425f9d5bc6
+run_name: xgboost_20251005_194219
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759673539087
+status: 3
+tags: []
+user_id: Hasitha

@@ -1,0 +1,19 @@
+Model Evaluation Report
+==================================================
+Model Name: logistic_regression_cv_model
+Evaluation Date: 2025-10-05T19:43:32.922180
+Test Samples: 1,409
+
+Metrics:
+---------
+Accuracy: 0.8062
+Precision: 0.6719
+Recall: 0.5576
+F1: 0.6094
+Auc: 0.8376
+Log_loss: 0.4296
+
+Confusion Matrix:
+-----------------
+[923 104]
+[169 213]

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/8129a22f9822429bbb4ea225bcaf6628/artifacts
+end_time: 1759673612659
+entry_point_name: ''
+experiment_id: '846139935295218370'
+lifecycle_stage: active
+run_id: 8129a22f9822429bbb4ea225bcaf6628
+run_name: random_forest_20251005_194319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759673600163
+status: 3
+tags: []
+user_id: Hasitha

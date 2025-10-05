@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/1cb7e3565b5d4d21836baedd872d7007/artifacts
+end_time: 1759673623080
+entry_point_name: ''
+experiment_id: '846139935295218370'
+lifecycle_stage: active
+run_id: 1cb7e3565b5d4d21836baedd872d7007
+run_name: decision_tree_20251005_194337
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759673617897
+status: 3
+tags: []
+user_id: Hasitha

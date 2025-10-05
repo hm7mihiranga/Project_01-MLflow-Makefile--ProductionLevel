@@ -1,0 +1,19 @@
+Model Evaluation Report
+==================================================
+Model Name: xgboost_cv_model
+Evaluation Date: 2025-10-05T19:43:52.061974
+Test Samples: 1,409
+
+Metrics:
+---------
+Accuracy: 0.7899
+Precision: 0.6215
+Recall: 0.5759
+F1: 0.5978
+Auc: 0.8151
+Log_loss: 0.4891
+
+Confusion Matrix:
+-----------------
+[893 134]
+[162 220]

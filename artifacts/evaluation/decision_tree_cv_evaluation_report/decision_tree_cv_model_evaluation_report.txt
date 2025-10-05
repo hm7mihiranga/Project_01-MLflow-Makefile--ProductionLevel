@@ -1,0 +1,19 @@
+Model Evaluation Report
+==================================================
+Model Name: decision_tree_cv_model
+Evaluation Date: 2025-10-05T19:43:38.155358
+Test Samples: 1,409
+
+Metrics:
+---------
+Accuracy: 0.7445
+Precision: 0.5312
+Recall: 0.4895
+F1: 0.5095
+Auc: 0.7410
+Log_loss: 3.2433
+
+Confusion Matrix:
+-----------------
+[862 165]
+[195 187]

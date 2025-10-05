@@ -1,0 +1,171 @@
+data_paths:
+  raw_data: "data/raw/Telco-Customer-Churn.csv"
+  processed_data: "data/processed/Telco-Customer-Churn_Missing_Values_Handled.csv"
+  artifacts_dir: "artifacts"
+  data_artifacts_dir: "artifacts/data"
+  model_artifacts_dir: "artifacts/models"
+
+columns:
+  target: "Churn"
+  drop_columns: ["customerID"]
+  critical_columns: ["TotalCharges"]
+  outlier_columns: ["tenure", "MonthlyCharges", "TotalCharges"]
+  bin_cols: ["gender","Partner","Dependents","PhoneService","PaperlessBilling","Churn"]
+  multi_cols: ["MultipleLines","InternetService","OnlineSecurity","OnlineBackup","DeviceProtection","TechSupport","StreamingTV","StreamingMovies","Contract","PaymentMethod","TenureCategory"]
+  numeric_columns: ["SeniorCitizen", "tenure", "MonthlyCharges", "TotalCharges"]
+  feature_columns:
+    - "gender"
+    - "SeniorCitizen"
+    - "Partner"
+    - "Dependents"
+    - "tenure"
+    - "PhoneService"
+    - "MultipleLines"
+    - "InternetService"
+    - "OnlineSecurity"
+    - "OnlineBackup"
+    - "DeviceProtection"
+    - "TechSupport"
+    - "StreamingTV"
+    - "StreamingMovies"
+    - "Contract"
+    - "PaperlessBilling"
+    - "PaymentMethod"
+    - "MonthlyCharges"
+    - "TotalCharges"
+
+
+feature_binning:
+  tenure_category:
+    New: [0, 12]
+    Established: [13, 48]
+    Loyal: [49, null]
+
+
+feature_encoding:
+  binary:
+    bin_cols: ["gender","Partner","Dependents","PhoneService","PaperlessBilling","Churn"]
+  multi:
+    multi_cols: ["MultipleLines","InternetService","OnlineSecurity","OnlineBackup","DeviceProtection","TechSupport","StreamingTV","StreamingMovies","Contract","PaymentMethod","TenureCategory"]
+
+feature_scaling:
+  scaling_type: "standard"
+  columns_to_scale: ["tenure", "MonthlyCharges", "TotalCharges"]
+
+data_splitting:
+  split_type: "simple"
+  test_size: 0.2
+  random_state: 42
+  n_splits: 5
+
+training:
+  default_model_type: "random_forest"
+  default_training_strategy: "cv"
+  cv_folds: 5
+  random_state: 42
+  test_size: 0.2
+  validation_split: 0.2
+  early_stopping_patience: 10
+  max_iterations: 1000
+  hyperparameter_tuning:
+    enabled: false
+    search_method: "grid"
+    cv_folds: 5
+    n_iter: 20
+  model_types:
+    random_forest:
+      class_path: "sklearn.ensemble.RandomForestClassifier"
+      params: {}
+    logistic_regression:
+      class_path: "sklearn.linear_model.LogisticRegression"
+      params: {}
+    decision_tree:
+      class_path: "sklearn.tree.DecisionTreeClassifier"
+      params: {}
+    catboost:
+      class_path: "catboost.CatBoostClassifier"
+      params: {}
+    xgboost:
+      class_path: "xgboost.XGBClassifier"
+      params: {}
+
+
+model:
+  model_type: "random_forest"
+  training_strategy: "cv"
+  data_path: "data/raw/Telco-Customer-Churn.csv"
+  model_path: "artifacts/models/random_forest_cv_model.pkl"
+  evaluation_path: "artifacts/evaluation/random_forest_cv_evaluation_report.txt"
+  model_params:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+  model_types:
+    random_forest:
+      class_path: "sklearn.ensemble.RandomForestClassifier"
+      params:
+        n_estimators: 100
+        max_depth: 10
+        random_state: 42
+    logistic_regression:
+      class_path: "sklearn.linear_model.LogisticRegression"
+      params:
+        random_state: 42
+        max_iter: 1000
+    decision_tree:
+      class_path: "sklearn.tree.DecisionTreeClassifier"
+      params:
+        max_depth: 10
+        random_state: 42
+    catboost:
+      class_path: "catboost.CatBoostClassifier"
+      params:
+        iterations: 100
+        depth: 6
+        random_seed: 42
+        verbose: False
+    xgboost:
+      class_path: "xgboost.XGBClassifier"
+      params:
+        n_estimators: 100
+        max_depth: 6
+        random_state: 42
+
+
+evaluation:
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1-score"
+  cv_folds: 5
+  random_state: 42
+
+deployment:
+  model_name: "churn_analysis_model"
+  model_version: "1.0.0"
+  api_endpoint: "/predict"
+  batch_size: 1000
+
+inference:
+  model_name: "random_forest_cv_model"
+  data_path: "artifacts/data/X_test.csv"
+  sample_size: 100
+  save_path: "artifacts/predictions/predictions.csv"
+  batch_size: 1000
+  return_proba: true
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  file: "pipeline.log"
+
+environment:
+  experiment_name: "churn_analysis"
+
+pipeline:
+  data_pipeline_name: "data_processing_pipeline"
+  training_pipeline_name: "model_training_pipeline"
+  deployment_pipeline_name: "model_deployment_pipeline"
+  inference_pipeline_name: "inference_pipeline"
+  enable_cache: false

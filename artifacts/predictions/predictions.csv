@@ -1,0 +1,4 @@
+customer_id,churn_prediction,churn_status,churn_probability,confidence_score,prediction_time_ms,batch_prediction,batch_churn_status
+DEMO-001,0,Will Retain,0.2374,76.26,6.0,0,Will Retain
+DEMO-002,0,Will Retain,0.208,79.2,5.0,0,Will Retain
+DEMO-003,0,Will Retain,0.106,89.4,14.0,0,Will Retain

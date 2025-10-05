@@ -1,0 +1,19 @@
+Model Evaluation Report
+==================================================
+Model Name: random_forest_cv_model
+Evaluation Date: 2025-10-05T19:43:22.483561
+Test Samples: 1,409
+
+Metrics:
+---------
+Accuracy: 0.7977
+Precision: 0.6530
+Recall: 0.5419
+F1: 0.5923
+Auc: 0.8397
+Log_loss: 0.4255
+
+Confusion Matrix:
+-----------------
+[917 110]
+[175 207]

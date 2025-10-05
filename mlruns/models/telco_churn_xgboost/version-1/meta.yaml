@@ -1,0 +1,18 @@
+aliases: []
+creation_timestamp: 1759673637961
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1759673637961
+metrics: null
+model_id: m-eed7cf8447d545838945fa3a090da5f2
+name: telco_churn_xgboost
+params: null
+run_id: 23c33141610949a795764320295125a0
+run_link: null
+source: models:/m-eed7cf8447d545838945fa3a090da5f2
+status: READY
+status_message: null
+storage_location: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/models/m-eed7cf8447d545838945fa3a090da5f2/artifacts
+user_id: null
+version: 1

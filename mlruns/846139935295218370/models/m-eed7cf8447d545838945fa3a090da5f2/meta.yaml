@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/models/m-eed7cf8447d545838945fa3a090da5f2/artifacts
+creation_timestamp: 1759673633309
+experiment_id: '846139935295218370'
+last_updated_timestamp: 1759673637935
+model_id: m-eed7cf8447d545838945fa3a090da5f2
+model_type: null
+name: model
+source_run_id: 23c33141610949a795764320295125a0
+status: 2
+status_message: null

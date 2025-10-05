@@ -1,0 +1,19 @@
+Model Evaluation Report
+==================================================
+Model Name: catboost_cv_model
+Evaluation Date: 2025-10-05T19:43:45.548937
+Test Samples: 1,409
+
+Metrics:
+---------
+Accuracy: 0.8062
+Precision: 0.6617
+Recall: 0.5838
+F1: 0.6203
+Auc: 0.8311
+Log_loss: 0.4405
+
+Confusion Matrix:
+-----------------
+[913 114]
+[159 223]

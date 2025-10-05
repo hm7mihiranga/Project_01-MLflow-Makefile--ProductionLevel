@@ -1,0 +1,18 @@
+aliases: []
+creation_timestamp: 1759673622844
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1759673622844
+metrics: null
+model_id: m-d7dcdcf23ebc4239b7d093959055ff5e
+name: telco_churn_decision_tree
+params: null
+run_id: 1cb7e3565b5d4d21836baedd872d7007
+run_link: null
+source: models:/m-d7dcdcf23ebc4239b7d093959055ff5e
+status: READY
+status_message: null
+storage_location: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/models/m-d7dcdcf23ebc4239b7d093959055ff5e/artifacts
+user_id: null
+version: 1

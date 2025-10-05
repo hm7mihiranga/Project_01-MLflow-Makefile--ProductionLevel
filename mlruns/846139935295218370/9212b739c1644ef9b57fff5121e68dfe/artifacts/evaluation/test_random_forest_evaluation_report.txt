@@ -1,0 +1,19 @@
+Model Evaluation Report
+==================================================
+Model Name: test_random_forest
+Evaluation Date: 2025-10-05T19:04:46.139358
+Test Samples: 200
+
+Metrics:
+---------
+Accuracy: 0.9000
+Precision: 0.9485
+Recall: 0.8598
+F1: 0.9020
+Auc: 0.9379
+Log_loss: 0.3204
+
+Confusion Matrix:
+-----------------
+[88  5]
+[15 92]

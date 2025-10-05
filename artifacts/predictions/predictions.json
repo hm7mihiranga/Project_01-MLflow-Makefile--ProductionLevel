@@ -1,0 +1,32 @@
+[
+  {
+    "customer_id": "DEMO-001",
+    "churn_prediction": 0,
+    "churn_status": "Will Retain",
+    "churn_probability": 0.2374,
+    "confidence_score": 76.26,
+    "prediction_time_ms": 6.0,
+    "batch_prediction": 0,
+    "batch_churn_status": "Will Retain"
+  },
+  {
+    "customer_id": "DEMO-002",
+    "churn_prediction": 0,
+    "churn_status": "Will Retain",
+    "churn_probability": 0.208,
+    "confidence_score": 79.2,
+    "prediction_time_ms": 5.0,
+    "batch_prediction": 0,
+    "batch_churn_status": "Will Retain"
+  },
+  {
+    "customer_id": "DEMO-003",
+    "churn_prediction": 0,
+    "churn_status": "Will Retain",
+    "churn_probability": 0.106,
+    "confidence_score": 89.4,
+    "prediction_time_ms": 14.0,
+    "batch_prediction": 0,
+    "batch_churn_status": "Will Retain"
+  }
+]

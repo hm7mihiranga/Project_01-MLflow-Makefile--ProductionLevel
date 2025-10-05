@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Zuu Crew/Assignment_MiniProject_01/Project00/mlruns/846139935295218370/2861fd04af214a33ad836dd62de882c2/artifacts
+end_time: 1759673631067
+entry_point_name: ''
+experiment_id: '846139935295218370'
+lifecycle_stage: active
+run_id: 2861fd04af214a33ad836dd62de882c2
+run_name: catboost_20251005_194343
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759673623087
+status: 3
+tags: []
+user_id: Hasitha
